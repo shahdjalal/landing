@@ -26,7 +26,7 @@ ul{
 
 .container{
 
-    width: 1400px;
+    width: calc(100% - 140px);
     margin: auto;
    
     
@@ -34,10 +34,13 @@ ul{
 
 .row{
     display: flex;
+   
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
 }
+
+
 
 
 
