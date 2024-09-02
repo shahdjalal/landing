@@ -168,203 +168,22 @@ body {
 
 
 
-/* footer */
 
-.footer{
-    background-color: #393E46;
-    color: #fff;
 
-    padding: 60px 0;
-}
 
-.footer .row {
 
-    gap: 80px;
-}
 
-.footer  a{
 
-    color: white;
-}
 
-.footer h2{
 
-    margin-bottom: 20px;
-}
 
-.start{
 
-    width: 30%;
 
-    display: flex;
-   
-    flex-direction: column;
 
-    gap: 20px;
-  
- flex-wrap: wrap;
 
-   
-}
 
-.icons img{
 
-    width: 30px;
 
-    padding:5px;
-}
-
-.end{
- display: flex;
-    flex-grow: 1;
-justify-content: space-around;
-flex-wrap: wrap;
-
-  
-}
-
-.footer-item nav{
-
-    display: flex;
-    flex-direction: column;  
-    gap: 10px; 
-    flex-wrap: wrap;
-}
-
-
-/* footerresponsive */
-
-@media screen and (max-width:1100px) {
-
-   .start{
-    width: 100%;
-    text-align: center;
-   }
-
-   .footer .row{
-
-    gap: 20px;
-   }
-
-}
-
-@media screen and (max-width:700px){
-
-
-    .footer-item{
-       width: 50%;
-       margin-bottom:20px;
-       text-align: center;
-    }
-
-}
-
-@media screen and (max-width:400px){
-
-.end{
-
-    flex-direction: column;
-
-}
-
-.footer-item{
-    margin: auto;
-    margin-bottom: 20px;
-    
-}
-
-}
-
-
-/* Testimonials  */
-
-.Testimonials{
-
-    background-color: #fff;
-     padding: 100px 0;
-
-}
-
-
-
-.Testimonials h2{
-
-    text-align: center;
-    margin-bottom: 50px;
-    
-  font-size: 30px;
-}
-
-
-.Testimonial {
-
-    padding: 40px ;
-   
-    box-shadow: 0px 8.23719596862793px 8.23719596862793px rgba(0, 0, 0, 0.1);
-   
-    display: flex;
-    flex-direction: column;
-     flex-wrap: wrap;
-     gap: 10px;
-    box-sizing: border-box;
-
-    width: calc((100% - 30px)/2);
-}
-
-.star{
-
-   color: #F1CC4A;
-}
- .Testimonial  q {
-    color: gray;
-}
-.Testimonials span{
-    color: gray;
-}
-.profile{
-
-    width: 40px;
-    height:  40px;
-    border-radius: 50%;
-    transition: transform 0.5s, background-color 0.5s;
-}
-
-
-
-.profile:hover {
-
-    transform: scale(1.5);
-}
-.profile-info{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-
-/* Testimonials responsive  */
-
-@media screen and (max-width:700px){
-
-    .Testimonial {
-
-        width: 100%;
-       
-    }
-    .Testimonials .row {
-
-      gap: 20px;
-       
-    }
-}
-
-@media screen and (max-width:577px){
-
-    .Testimonials h2{
-        font-size: 25px;
-    }
-}
 
 
 
@@ -638,8 +457,16 @@ font-family: var(--subFont);
         width: 50%;
         display: flex;
         flex-direction: column;
-        gap: 30px;
+        gap: 40px;
         color: #fff;
+    }
+    .course-details{
+
+        
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      
     }
     .statistics .details span{
        
@@ -734,3 +561,421 @@ font-family: var(--subFont);
   
 }
 
+
+
+/* courses */
+
+.courses .row:first-of-type{
+    gap: 100px;
+    padding: 50px 0;
+}
+.course-items,
+.available
+{
+   box-sizing: border-box;
+    width: calc((100% - 100px) / 2);
+}
+
+.course-items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.course{
+
+    width: calc((100% - 20px) / 2);
+    box-shadow: 0px 7.437575340270996px 7.437575340270996px rgba(0, 0, 0, 0.05);
+}
+
+.course-card{
+
+  position: relative;
+}
+.course-items img{
+    width: 100%;
+     filter: brightness(0.5);
+}
+
+
+.course-information{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px 20px  20px 0 ;
+    font-weight: 700;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+   
+}
+.course-information span:first-of-type{
+
+   background-color: var(--mainColor);
+   padding: 10px;
+}
+
+.course-information span:last-of-type{
+
+    align-self: flex-end;
+}
+
+.course-name{
+    display: flex;
+    align-items: center;
+     justify-content: space-between;
+    padding: 10px 20px;
+  
+}
+
+.course-name span{
+    color: var(--mainColor);
+    font-size: 12px;
+}
+
+
+.course .row{
+
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 5px 20px;
+    color: rgba(150, 150, 150, 1);
+ 
+
+}
+
+.available{
+    align-self: flex-start;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.available h2{
+    font-size: 30px;
+    
+}
+
+.available span{
+    color: var(--mainColor);
+}
+.available p{
+    color: rgba(150, 150, 150, 1);
+    width: 70%;
+}
+.available a{
+    width: 70px;
+   height: 20px;
+    padding:  5.35px  20.18px;
+    border-radius: 7px;
+    font-family: var(--subFont);
+    color: white;
+    font-weight: bold;
+    background-color: var(--mainColor);
+    border: solid var(--mainColor) 1px;
+    text-align: center;
+}
+
+
+/* courses  responsive*/
+
+@media screen and (max-width:1330px){
+
+    
+.available
+{
+   
+    width: 100%;
+}
+
+.available p{
+
+    width: 100%;
+}
+.course-items{
+    order: 1;
+    width: 100%;
+}
+
+
+}
+
+@media screen and (max-width:700px){
+    .course-items{
+       justify-content: center;
+    }
+    .course{
+        width: 80%;
+    }
+
+    .course h3{
+        font-size: 15px;
+    }
+
+    .course-name{
+       
+        
+        padding: 10px 5px;
+      
+    }
+
+    .course .row{
+
+       
+        gap: 15px;
+        padding: 5px 0px 5px 5px;
+     
+     
+    
+    }
+
+}
+
+@media screen and (max-width:350px){
+
+    .course-information span:first-of-type{
+ display: none;
+     }
+
+     .course-information {
+        justify-content: flex-end;
+     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Testimonials  */
+
+.Testimonials{
+
+    background-color: #fff;
+     padding: 100px 0;
+
+}
+
+
+
+.Testimonials h2{
+
+    text-align: center;
+    margin-bottom: 50px;
+    
+  font-size: 30px;
+}
+
+
+.Testimonial {
+
+    padding: 40px ;
+   
+    box-shadow: 0px 8.23719596862793px 8.23719596862793px rgba(0, 0, 0, 0.1);
+   
+    display: flex;
+    flex-direction: column;
+     flex-wrap: wrap;
+     gap: 10px;
+    box-sizing: border-box;
+
+    width: calc((100% - 30px)/2);
+
+    position: relative;
+}
+
+.Testimonial::after{
+
+    content: '';
+    position: absolute;
+    border-bottom: 30px solid transparent;
+    border-top: 30px solid rgba(244, 244, 244);
+    
+    border-left: 30px solid transparent;
+    border-right: 30px solid rgba(244, 244, 244);
+ 
+    right: 0;
+    top: 0;
+}
+
+.star{
+
+   color: #F1CC4A;
+}
+ .Testimonial  q {
+    color: gray;
+}
+.Testimonials span{
+    color: gray;
+}
+.profile{
+
+    width: 40px;
+    height:  40px;
+    border-radius: 50%;
+    transition: transform 0.5s, background-color 0.5s;
+}
+
+
+
+.profile:hover {
+
+    transform: scale(1.5);
+}
+.profile-info{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+
+/* Testimonials responsive  */
+
+@media screen and (max-width:700px){
+
+    .Testimonial {
+
+        width: 100%;
+       
+    }
+    .Testimonials .row {
+
+      gap: 20px;
+       
+    }
+}
+
+@media screen and (max-width:577px){
+
+    .Testimonials h2{
+        font-size: 25px;
+    }
+}
+
+
+
+
+
+/* footer */
+
+.footer{
+    background-color: #393E46;
+    color: #fff;
+
+    padding: 60px 0;
+}
+
+.footer .row {
+
+    gap: 80px;
+}
+
+.footer  a{
+
+    color: white;
+}
+
+.footer h2{
+
+    margin-bottom: 20px;
+}
+
+.start{
+
+    width: 30%;
+
+    display: flex;
+   
+    flex-direction: column;
+
+    gap: 20px;
+  
+ flex-wrap: wrap;
+
+   
+}
+
+.icons img{
+
+    width: 30px;
+
+    padding:5px;
+}
+
+.end{
+ display: flex;
+    flex-grow: 1;
+justify-content: space-around;
+flex-wrap: wrap;
+
+  
+}
+
+.footer-item nav{
+
+    display: flex;
+    flex-direction: column;  
+    gap: 10px; 
+    flex-wrap: wrap;
+}
+
+
+/* footerresponsive */
+
+@media screen and (max-width:1100px) {
+
+   .start{
+    width: 100%;
+    text-align: center;
+   }
+
+   .footer .row{
+
+    gap: 20px;
+   }
+
+}
+
+@media screen and (max-width:700px){
+
+
+    .footer-item{
+       width: 50%;
+       margin-bottom:20px;
+       text-align: center;
+    }
+
+}
+
+@media screen and (max-width:400px){
+
+.end{
+
+    flex-direction: column;
+
+}
+
+.footer-item{
+    margin: auto;
+    margin-bottom: 20px;
+    
+}
+
+}
